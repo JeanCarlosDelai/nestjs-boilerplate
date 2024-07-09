@@ -1,0 +1,22 @@
+{
+  "recommendations": [
+    //Themes
+    "dracula-theme.theme-dracula",
+    "pkief.material-icon-theme",
+    "usernamehw.errorlens",
+    //Lint and formating
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    //Git
+    "eamodio.gitlens",
+    "oderwat.indent-rainbow",
+    //WSL
+    "ms-vscode-remote.remote-wsl",
+    //Tests with vitest
+    "vitest.explorer",
+    //Postman HTTP provider
+    "postman.postman-for-vscode",
+    //PT-BR Language Pack
+    "ms-ceintl.vscode-language-pack-pt-br",
+  ]
+}
