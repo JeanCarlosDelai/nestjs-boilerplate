@@ -1,6 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { GetHelloController } from 'src/modules/app/controllers/get-hello.controller';
 import { ShowMessageDto } from 'src/modules/app/domain/dtos/show-message.dto';
+import { Messages } from 'src/modules/app/domain/enums/messages.enum';
 import { GetHelloService } from 'src/modules/app/services/get-hello.service';
 import { vi } from 'vitest';
 
@@ -32,7 +33,7 @@ describe('GetHelloControllerUnit', () => {
   describe('getHello', () => {
     it('should return "Hello World!"', async () => {
       const expectedResponse: ShowMessageDto = {
-        message: 'Hello World!',
+        message: Messages.HELLO_WORLD,
       };
       mockService.getHello.mockResolvedValueOnce(expectedResponse);
 
