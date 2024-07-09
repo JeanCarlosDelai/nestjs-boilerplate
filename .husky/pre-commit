@@ -1,2 +1,17 @@
-npm run lint
-npm run test -- --passWithNoTests
+echo 'Check for linting errors...'
+npm run format ||
+(echo 'Linting errors or tests failed. Please fix them before commiting.' && exit 1)
+
+echo 'Check unit tests...'
+npm run test ||
+(echo 'Your unit tests failed. Please fix them before commiting.' && exit 1)
+
+echo 'Check integration tests...'
+npm run test:integration ||
+(echo 'Your integration tests failed. Please fix them before commiting.' && exit 1)
+
+echo 'Check e2e tests...'
+npm run test:e2e ||
+(echo 'Your e2e tests failed. Please fix them before commiting.' && exit 1)
+
+echo 'Done'
