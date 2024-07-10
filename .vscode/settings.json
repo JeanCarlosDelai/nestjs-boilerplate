@@ -24,5 +24,9 @@
     "repository": "Database",
     "user": "Client",
     "aws": "Aws",
+    "dtos":"Class",
+    "domain": "core",
+    "swagger": "Seeders",
+    "unit":"mock"
   }
 }
