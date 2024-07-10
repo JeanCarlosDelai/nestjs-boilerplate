@@ -6,7 +6,7 @@
     "usernamehw.errorlens",
     //Lint and formating
     "dbaeumer.vscode-eslint",
-    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
     //Git
     "eamodio.gitlens",
     "oderwat.indent-rainbow",
