@@ -20,7 +20,7 @@
 - [NodeJS](https://nodejs.org/en/);
 - [Nest](https://docs.nestjs.com/);
 
-## 💻 Como iniciar Boilerplate NestJS API REST Simple
+## 💿 Como iniciar Boilerplate NestJS API REST Simple
 
 - Para iniciar execute os seguintes comandos
 - Recomendado usar o terminar do WSL/linux ou Git Bash para funcionar corretamente todos os comandos
@@ -44,7 +44,70 @@ cd nestjs-boilerplate
 cp .env.example .env
 ```
 
-## ✅ Tecnologias utilizadas
+- Instalar as dependências
+
+```sh
+npm i
+```
+
+- Adicionar configurações do Husky (Opcional)
+- Husky adiciona dus funcionalidades
+
+1.  Verificação nos commits para manter os commits padronizados
+2.  Antes de efetuar o commit ele roda alguns scripts para validar o código. Exemplo roda o lint e os testes
+
+```sh
+npm run prepare
+```
+
+- Agora é só iniciar o servidor em modo de desenvolvimento
+
+```sh
+npm run start:dev
+```
+
+- Se precisar rodar em produção
+
+```sh
+npm run build
+npm run start:prod
+```
+
+## 🧪 Rodando os testes
+
+- Para rodas os testes unitários:
+
+```sh
+npm run test
+```
+
+- Para rodar os testes de integração:
+
+```sh
+npm run test:integration
+```
+
+- Para rodas os testes e2e:
+
+```sh
+npm run test:e2e
+```
+
+- Para rodas os testes de mutação:
+
+```sh
+npm run test:mutation
+```
+
+### ✅ Verificar Cobertura Testes unitários
+
+- Para verificar a cobertura dos testes unitários, execute o seguinte comando:
+
+```sh
+npm run test:cov
+```
+
+## 💻 Tecnologias utilizadas
 
 - Linguagem: `Typescript`
 - Ambiente te execução: `Node.js`
