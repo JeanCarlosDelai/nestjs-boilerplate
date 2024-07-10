@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
-import { AppModule } from 'src/modules/app/app.module';
-import { AllExceptionsFilter } from 'src/shared/common/filters/AllException.filter';
+import { AllExceptionsFilter } from 'src/shared/filters/AllException.filter';
+import { AppModule } from 'src/app.module';
 
 let app: INestApplication;
 
