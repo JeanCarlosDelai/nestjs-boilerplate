@@ -1,7 +1,7 @@
 import { Body, Controller, Post } from '@nestjs/common';
 import { ShowMessageService } from '../services/show-message.service';
 import { ShowMessageInputDto } from '../domain/dtos/show-message-input.dto';
-import { ShowMessageSwaggerDecorator } from '../domain/customDecorators/show-message-swagger.decorator';
+import { ShowMessageSwaggerDecorator } from '../domain/decorators/show-message-swagger.decorator';
 import { ShowMessageDto } from '../domain/dtos/show-message.dto';
 
 @Controller()

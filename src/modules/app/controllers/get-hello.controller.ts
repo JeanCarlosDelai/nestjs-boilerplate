@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { GetHelloService } from '../services/get-hello.service';
-import { GetHelloSwaggerDecorator } from '../domain/customDecorators/get-hello-swagger.decorator';
+import { GetHelloSwaggerDecorator } from '../domain/decorators/get-hello-swagger.decorator';
 import { ShowMessageDto } from '../domain/dtos/show-message.dto';
 
 @Controller()
