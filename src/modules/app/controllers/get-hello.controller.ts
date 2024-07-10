@@ -5,8 +5,7 @@ import { ShowMessageDto } from '../domain/dtos/show-message.dto';
 
 @Controller()
 export class GetHelloController {
-  // eslint-disable-next-line prettier/prettier
-  constructor(private readonly getHelloService: GetHelloService) { }
+  constructor(private readonly getHelloService: GetHelloService) {}
 
   @Get()
   @GetHelloSwaggerDecorator()

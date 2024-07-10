@@ -11,4 +11,4 @@ import { ShowMessageController } from './controllers/show-message.controller';
 })
 
 // eslint-disable-next-line prettier/prettier
-export class AppModule { }
+export class AppModule {}

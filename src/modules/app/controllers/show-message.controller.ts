@@ -6,8 +6,7 @@ import { ShowMessageDto } from '../domain/dtos/show-message.dto';
 
 @Controller()
 export class ShowMessageController {
-  // eslint-disable-next-line prettier/prettier
-  constructor(private readonly getHelloService: ShowMessageService) { }
+  constructor(private readonly getHelloService: ShowMessageService) {}
 
   @Post('/message')
   @ShowMessageSwaggerDecorator()

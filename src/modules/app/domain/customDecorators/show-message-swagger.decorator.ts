@@ -15,6 +15,6 @@ export function ShowMessageSwaggerDecorator() {
           message: Messages.HELLO_WORLD,
         },
       },
-    }),
+    })
   );
 }
