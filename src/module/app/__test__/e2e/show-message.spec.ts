@@ -1,8 +1,8 @@
 import { HttpStatus, INestApplication } from '@nestjs/common';
 import request from 'supertest';
 import { setupAppTest, teardownApp } from 'test/vitest-setup.e2e.js';
-import { MessageInputDto } from '../../http/dto/show-message/message-input.dto';
-import { MessageOutputDto } from '../../http/dto/show-message/message-output.dto';
+import { MessageInputDto } from '@src/module/app/http/dto/show-message/message-input.dto';
+import { MessageOutputDto } from '@src/module/app/http/dto/show-message/message-output.dto';
 
 describe('showMessageController (e2e)', () => {
   let app: INestApplication;

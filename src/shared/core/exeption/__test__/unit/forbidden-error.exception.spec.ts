@@ -1,4 +1,4 @@
-import { ForbiddenError } from '../../forbidden-error.exeption';
+import { ForbiddenError } from '@src/shared/core/exeption/forbidden-error.exeption';
 
 describe('ForbiddenError', () => {
   it('should have the correct message, status code, and error type', () => {

@@ -1,4 +1,4 @@
-import { InternalServerError } from '../../internal-server-error.exeption';
+import { InternalServerError } from '@src/shared/core/exeption/internal-server-error.exeption';
 
 describe('InternalServerError', () => {
   it('should have the correct message, status code, and error type', () => {

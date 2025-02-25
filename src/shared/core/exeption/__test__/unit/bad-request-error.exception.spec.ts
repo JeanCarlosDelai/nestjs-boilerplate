@@ -1,4 +1,4 @@
-import { BadRequestError } from '../../bad-request-error.exeption';
+import { BadRequestError } from '@src/shared/core/exeption/bad-request-error.exeption';
 
 describe('BadRequestError', () => {
   it('should have the correct message, status code, and error type', () => {

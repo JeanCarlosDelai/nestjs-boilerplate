@@ -1,8 +1,8 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { ShowMessageController } from '../../show-message.controller';
+import { ShowMessageController } from '@src/module/app/http/controller/show-message.controller';
 import { ShowMessageUseCase } from 'src/module/app/core/usecase/show-message.usecase';
-import { MessageInputDto } from '../../../dto/show-message/message-input.dto';
-import { MessageOutputDto } from '../../../dto/show-message/message-output.dto';
+import { MessageInputDto } from '@src/module/app/http/dto/show-message/message-input.dto';
+import { MessageOutputDto } from '@src/module/app/http/dto/show-message/message-output.dto';
 import { vi } from 'vitest';
 
 describe('ShowMessageController Unit test', () => {

@@ -1,5 +1,5 @@
-import { FORBIDDEN } from '../constant/errors.consts';
-import { HttpStatusCode } from '../enum/http-status-codes.enum';
+import { FORBIDDEN } from '@src/shared/core/constant/errors.consts';
+import { HttpStatusCode } from '@src/shared/core/enum/http-status-codes.enum';
 import { DefaultError } from './default-error.abstract.exception';
 
 export class ForbiddenError extends DefaultError {

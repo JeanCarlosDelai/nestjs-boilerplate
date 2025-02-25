@@ -1,4 +1,4 @@
-import { NotFoundError } from '../../not-found-error.exeption';
+import { NotFoundError } from '@src/shared/core/exeption/not-found-error.exeption';
 
 describe('NotFoundError', () => {
   it('should have the correct message, status code, and error type', () => {

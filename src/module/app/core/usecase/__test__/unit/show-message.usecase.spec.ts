@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { MessageInputDto } from 'src/module/app/http/dto/show-message/message-input.dto';
 import { MessageOutputDto } from 'src/module/app/http/dto/show-message/message-output.dto';
-import { ShowMessageUseCase } from '../../show-message.usecase';
+import { ShowMessageUseCase } from '@src/module/app/core/usecase/show-message.usecase';
 import { AppLogger } from '@src/shared/infra/logger/service/app-logger.service';
 
 describe('ShowMessageUseCase unit test', () => {
