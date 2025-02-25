@@ -1,14 +1,21 @@
 {
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.insertFinalNewline": "explicit",
-    "source.formatDocument": "explicit",
-    "source.fixAll.eslint": "explicit"
+  "git.mergeEditor": true,
+
+  //Oculta a pasta para não aparecer na importação automática
+  "files.exclude": {
+    "**/dist": true
   },
 
   //Prettier
   "prettier.configPath": ".prettierrc",
 
+  //eslint
+  "eslint.nodePath": ".eslintrc",
   //Material icons
   "material-icon-theme.activeIconPack": "nest",
   "material-icon-theme.files.associations": {
@@ -24,9 +31,9 @@
     "repository": "Database",
     "user": "Client",
     "aws": "Aws",
-    "dtos":"Class",
+    "dtos": "Class",
     "domain": "core",
     "swagger": "Seeders",
-    "unit":"mock"
+    "unit": "mock"
   }
 }

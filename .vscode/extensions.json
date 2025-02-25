@@ -13,10 +13,6 @@
     //WSL
     "ms-vscode-remote.remote-wsl",
     //Tests with vitest
-    "vitest.explorer",
-    //Postman HTTP provider
-    "postman.postman-for-vscode",
-    //PT-BR Language Pack
-    "ms-ceintl.vscode-language-pack-pt-br",
+    "vitest.explorer"
   ]
 }
