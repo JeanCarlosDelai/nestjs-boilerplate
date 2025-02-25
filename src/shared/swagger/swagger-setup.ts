@@ -11,9 +11,9 @@ export const swaggerSetup = (app: INestApplication): void => {
     swaggerOptions: {
       apisSorter: 'alpha',
       tagsSorter: 'alpha',
-      operationsSoreter: 'alpha',
-    },
+      operationsSoreter: 'alpha'
+    }
   };
   const document = SwaggerModule.createDocument(app, configSwagger);
-  SwaggerModule.setup('api', app, document, swaggerOpts);
+  SwaggerModule.setup('api-docs', app, document, swaggerOpts);
 };

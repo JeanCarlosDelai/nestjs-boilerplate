@@ -1,23 +1,27 @@
 import { NestFactory } from '@nestjs/core';
-import { AllExceptionsFilter } from './shared/filters/AllException.filter';
-import { Logger, ValidationPipe } from '@nestjs/common';
+import { ValidationPipe } from '@nestjs/common';
 import { swaggerSetup } from './shared/swagger/swagger-setup';
-import { ConfigService } from '@nestjs/config';
-import { AllConfigType } from './shared/config/config.type';
 import { AppModule } from './app.module';
+import { NestExpressApplication } from '@nestjs/platform-express';
+import { LoggerFactory } from './shared/infra/logger/util/logger.factory';
+import { ConfigService } from './shared/infra/config/config.service';
+import { AppLogger } from './shared/infra/logger/service/app-logger.service';
+import { AllExceptionFilter } from './shared/infra/filter/all-exeption.filter';
 
 async function bootstrap() {
-  const logger = new Logger('Main');
-  const app = await NestFactory.create(AppModule);
-  const configService = app.get(ConfigService<AllConfigType>);
-  app.useGlobalFilters(new AllExceptionsFilter());
-  app.useGlobalPipes(
-    new ValidationPipe({ transform: true, disableErrorMessages: false })
-  );
+  const logger = LoggerFactory('appplication-main');
+  const appLogger = new AppLogger();
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
+  const configService = app.get<ConfigService>(ConfigService);
+  const port = configService.get('port');
+
+  app.useGlobalFilters(new AllExceptionFilter(appLogger));
+  app.useGlobalPipes(new ValidationPipe({ transform: true }));
+  app.useLogger(logger);
+
   swaggerSetup(app);
-  await app.listen(configService.getOrThrow('app.port', { infer: true }));
-  logger.log(
-    `API Nest it ruuning: ${configService.get('app.port', { infer: true })}`
-  );
+  await app.listen(port);
+  logger.log(`API Nest it ruuning: ${port}`, 'main');
 }
+
 bootstrap();

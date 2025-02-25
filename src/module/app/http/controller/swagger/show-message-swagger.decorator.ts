@@ -1,20 +1,21 @@
 import { applyDecorators } from '@nestjs/common';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { Messages } from '../enums/messages.enum';
+import { Message } from 'src/module/app/core/enum/message.enum';
+
 export function ShowMessageSwaggerDecorator() {
   return applyDecorators(
     ApiTags('app'),
     ApiOperation({
-      summary: 'Post message',
+      summary: 'Post message'
     }),
     ApiResponse({
       description: 'Show message',
       status: 201,
       schema: {
         example: {
-          message: Messages.HELLO_WORLD,
-        },
-      },
+          message: Message.HELLO_WORLD
+        }
+      }
     })
   );
 }
