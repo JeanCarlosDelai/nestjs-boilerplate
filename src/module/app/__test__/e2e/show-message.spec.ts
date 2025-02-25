@@ -1,8 +1,8 @@
 import { HttpStatus, INestApplication } from '@nestjs/common';
 import request from 'supertest';
-import { setupAppTest, teardownApp } from './vitest-setup.e2e';
-import { ShowMessageDto } from 'src/modules/app/domain/dtos/show-message.dto';
-import { ShowMessageInputDto } from 'src/modules/app/domain/dtos/show-message-input.dto';
+import { setupAppTest, teardownApp } from 'test/vitest-setup.e2e.js';
+import { MessageInputDto } from '../../http/dto/show-message/message-input.dto';
+import { MessageOutputDto } from '../../http/dto/show-message/message-output.dto';
 
 describe('showMessageController (e2e)', () => {
   let app: INestApplication;
@@ -17,11 +17,11 @@ describe('showMessageController (e2e)', () => {
 
   it('/message (POST)', async () => {
     const expectedStatusCode = HttpStatus.CREATED;
-    const showMessageInput: ShowMessageInputDto = {
-      message: 'Any message',
+    const showMessageInput: MessageInputDto = {
+      message: 'Any message'
     };
-    const expectedResponse: ShowMessageDto = {
-      message: showMessageInput.message,
+    const expectedResponse: MessageOutputDto = {
+      message: showMessageInput.message
     };
 
     const response = await request(app.getHttpServer())
