@@ -4,15 +4,7 @@
 
 - [NestJS API REST Simple](https://github.com/JeanCarlosDelai/nestjs-boilerplate/tree/main);
 - [NestJS API GraphQL Simple](https://github.com/JeanCarlosDelai/nestjs-boilerplate/tree/nestjs-graphql-simple);
-
-## 👩‍💻 Em desenvolvimento / Futuros
-
-- [NestJS API REST TypeORM + PostgresSQL + Docker + Simple JWT Auth]();
-- [NestJS API REST TypeORM + MongoDB + Docker + Simple JWT Auth]();
-- [NestJS API REST Mongoose + MongoDB + Docker + Simple JWT Auth]();
-- [NestJS API REST Simple + i18n]();
-- [NestJS API REST TypeORM + PostgresSQL + Docker + Full JWT Auth + Nodemailer]();
-- [NestJS API REST AWS Cognito + Terraform]();
+- [NestJS API GraphQL TypeORM + PostgresSQL + Docker + Simple JWT Auth](https://github.com/JeanCarlosDelai/nestjs-boilerplate/tree/nest-js-graphql-typeorm-docker-simple-auth);
 
 ## 🚩 Requisitos
 
