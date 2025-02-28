@@ -1,6 +1,6 @@
 import { Body, Controller, Post } from '@nestjs/common';
 import { ShowMessageUseCase } from '@src/module/app/core/usecase/show-message.usecase';
-import { ShowMessageSwaggerDecorator } from './swagger/show-message-swagger.decorator';
+import { ShowMessageSwaggerDecorator } from '@src/module/app/http/swagger/show-message-swagger.decorator';
 import { MessageInputDto } from '@src/module/app/http/dto/show-message/message-input.dto';
 import { MessageOutputDto } from '@src/module/app/http/dto/show-message/message-output.dto';
 

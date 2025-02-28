@@ -1,6 +1,6 @@
-export const BAD_REQUEST = 'BAD_REQUEST';
-export const UNAUTHORIZED = 'UNAUTHORIZED';
-export const NOT_FOUND = 'NOT_FOUND';
-export const INTERNAL_SERVER_ERROR = 'INTERNAL_SERVER_ERROR';
-export const VALIDATION = 'VALIDATION';
-export const FORBIDDEN = 'FORBIDDEN';
+export const BAD_REQUEST = 'Bad Request';
+export const UNAUTHORIZED = 'Unauthorized';
+export const NOT_FOUND = 'Not Found';
+export const INTERNAL_SERVER_ERROR = 'Internal Server Error';
+export const VALIDATION = 'Validation Error';
+export const FORBIDDEN = 'Forbidden';

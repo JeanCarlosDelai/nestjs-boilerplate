@@ -2,7 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication, ValidationPipe } from '@nestjs/common';
 import { AppModule } from 'src/app.module';
 import { AllExceptionFilter } from '@src/shared/infra/filter/all-exeption.filter';
-import { AppLogger } from '@src/shared/infra/logger/service/app-logger.service';
+import { AppLogger } from '@src/shared/infra/logger/app-logger.service';
 
 let app: INestApplication;
 

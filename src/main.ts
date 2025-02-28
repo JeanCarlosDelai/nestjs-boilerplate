@@ -1,11 +1,11 @@
 import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
-import { swaggerSetup } from './shared/swagger/swagger-setup';
+import { swaggerSetup } from './shared/swagger/swagger.setup';
 import { AppModule } from './app.module';
 import { NestExpressApplication } from '@nestjs/platform-express';
-import { LoggerFactory } from './shared/infra/logger/util/logger.factory';
+import { LoggerFactory } from './shared/infra/logger/logger.factory';
 import { ConfigService } from './shared/infra/config/config.service';
-import { AppLogger } from './shared/infra/logger/service/app-logger.service';
+import { AppLogger } from './shared/infra/logger/app-logger.service';
 import { AllExceptionFilter } from './shared/infra/filter/all-exeption.filter';
 
 async function bootstrap() {

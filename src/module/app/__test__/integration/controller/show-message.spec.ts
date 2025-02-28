@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { AppLogger } from '@src/shared/infra/logger/service/app-logger.service';
+import { AppLogger } from '@src/shared/infra/logger/app-logger.service';
 import { ShowMessageUseCase } from 'src/module/app/core/usecase/show-message.usecase';
 import { ShowMessageController } from 'src/module/app/http/controller/show-message.controller';
 import { MessageInputDto } from 'src/module/app/http/dto/show-message/message-input.dto';
