@@ -7,7 +7,7 @@ import { AppLogger } from '@src/shared/infra/logger/app-logger.service';
 export class ShowMessageUseCase {
   constructor(private readonly appLogger: AppLogger) {}
   execute(message: MessageInputDto): MessageOutputDto {
-    this.appLogger.log('Retornado mensagem para o usuário', { content: message });
+    this.appLogger.log('Return message', { content: message });
     return message;
   }
 }
