@@ -2,6 +2,22 @@
 
 import { createFolderStructure } from 'eslint-plugin-project-structure';
 
+/**
+ * @typedef {Object} FolderChild
+ * @property {string} name - The name of the folder or file.
+ * @property {FolderChild[]} [children] - Optional array of child folders or files.
+ */
+
+/**
+ * @typedef {Object} FolderStructure
+ * @property {FolderChild[]} children - Array of children in the folder structure.
+ */
+
+/**
+ * Builds a folder structure for unit tests.
+ * @param {string} fileType - The type of file to create.
+ * @returns {FolderStructure} The folder structure.
+ */
 const finalDirectoryWithUnitTestsBuilder = (fileType) => ({
   children: [
     {
@@ -10,8 +26,7 @@ const finalDirectoryWithUnitTestsBuilder = (fileType) => ({
         {
           name: 'unit',
           children: [{ name: `{kebab-case}.${fileType}.spec.ts` }]
-        },
-        ,
+        }
       ]
     },
     {
@@ -267,7 +282,6 @@ export const folderStructureConfig = createFolderStructure({
   rules: {
     finalDirectoryWithUnitTests_service: finalDirectoryWithUnitTestsBuilder('service'),
     finalDirectoryWithUnitTests_usecase: finalDirectoryWithUnitTestsBuilder('usecase'),
-    finalDirectoryWithUnitTests_resolver: finalDirectoryWithUnitTestsBuilder('resolver'),
     finalDirectoryWithUnitTests_model: finalDirectoryWithUnitTestsBuilder('model'),
     finalDirectoryWithUnitTests_resolver: finalDirectoryWithUnitTestsBuilder('resolver'),
     finalDirectoryWithUnitTests_controller:

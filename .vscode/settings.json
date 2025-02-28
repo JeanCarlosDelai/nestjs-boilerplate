@@ -15,7 +15,7 @@
   "prettier.configPath": ".prettierrc",
 
   //eslint
-  "eslint.nodePath": ".eslintrc",
+  "eslint.nodePath": "eslint.config.mjs",
   //Material icons
   "material-icon-theme.activeIconPack": "nest",
   "material-icon-theme.files.associations": {

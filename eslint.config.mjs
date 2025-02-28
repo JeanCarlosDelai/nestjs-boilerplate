@@ -20,7 +20,7 @@ const compat = new FlatCompat({
 
 export default [
   {
-    ignores: ['**/stryker.config.mjs', '**/eslint.config.mjs']
+    ignores: ['**/stryker.config.mjs', '**/eslint.config.mjs', 'folder-structure.mjs']
   },
   ...compat.extends(
     'eslint:recommended',
