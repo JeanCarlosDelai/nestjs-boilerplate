@@ -1,10 +1,10 @@
-<h1 align="center"> Nest-Boilerplate API REST Simple</h1>
+<h1 align="center"> Nest-Boilerplate</h1>
 
 ## 📄 Todos os Boilerplates
 
-- Atual [NestJS API REST Simple](https://github.com/JeanCarlosDelai/nestjs-boilerplate/tree/main);
-- [NestJS API GraphQL Simple](https://github.com/JeanCarlosDelai/nestjs-boilerplate/tree/nestjs-graphql-simple);
-- [NestJS API GraphQL TypeORM + PostgresSQL + Docker + Simple JWT Auth](https://github.com/JeanCarlosDelai/nestjs-boilerplate/tree/nest-js-graphql-typeorm-docker-simple-auth);
+- NestJS API REST Simple;
+- NestJS API GraphQL Simple;
+- NestJS API GraphQL TypeORM + PostgresSQL + Docker + Full JWT Auth;
 
 ## 🚩 Requisitos
 
