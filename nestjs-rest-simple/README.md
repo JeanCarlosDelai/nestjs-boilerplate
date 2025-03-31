@@ -1,18 +1,12 @@
 <h1 align="center"> Nest-Boilerplate</h1>
 
-## 📄 Todos os Boilerplates
-
-- NestJS API REST Simple;
-- NestJS API GraphQL Simple;
-- NestJS API GraphQL TypeORM + PostgresSQL + Docker + Full JWT Auth;
-
 ## 🚩 Requisitos
 
 - [Git](https://www.git-scm.com/downloads);
 - [NodeJS](https://nodejs.org/en/);
 - [Nest](https://docs.nestjs.com/);
 
-## 💿 Como iniciar Boilerplate NestJS API REST Simple
+## 💿 Como iniciar o Boilerplate
 
 - Para iniciar execute os seguintes comandos
 - Recomendado usar o terminar do WSL/linux ou Git Bash para funcionar corretamente todos os comandos
