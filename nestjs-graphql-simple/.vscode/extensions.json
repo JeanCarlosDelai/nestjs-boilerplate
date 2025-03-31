@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    //Themes
+    "dracula-theme.theme-dracula",
+    "pkief.material-icon-theme",
+    "usernamehw.errorlens",
+    //Lint and formating
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    //Git
+    "eamodio.gitlens",
+    "oderwat.indent-rainbow",
+    //WSL
+    "ms-vscode-remote.remote-wsl",
+    //Tests with vitest
+    "vitest.explorer"
+  ]
+}
