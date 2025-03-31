@@ -1,0 +1,8 @@
+echo -e "\033[1;34mChecking lint and formatting code...\033[0m"
+
+npm run format || (
+  echo -e "\033[1;31mSome formatting errors were found, see the log for more information.\033[0m"
+  exit 1
+)
+
+echo -e "\033[1;32mDone\033[0m"

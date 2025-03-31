@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo -e "\033[1;34mCheck unit tests...\033[0m"
+
+npm run test || (
+  echo -e "\033[1;31mOne or more unit tests failed. Please correct them before confirming..\033[0m"
+  exit 1
+)
+
+echo -e "\033[1;32mDone\033[0m"
