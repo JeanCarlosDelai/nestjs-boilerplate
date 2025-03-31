@@ -7,7 +7,6 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import js from '@eslint/js';
 import { FlatCompat } from '@eslint/eslintrc';
-import { folderStructureConfig } from './folder-structure.mjs';
 import { projectStructurePlugin } from 'eslint-plugin-project-structure';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -64,7 +63,6 @@ export default [
     },
 
     rules: {
-      'project-structure/folder-structure': ['warn', folderStructureConfig],
       'no-console': 'warn',
       'prettier/prettier': 'error',
       '@typescript-eslint/no-unused-vars': 'warn',
