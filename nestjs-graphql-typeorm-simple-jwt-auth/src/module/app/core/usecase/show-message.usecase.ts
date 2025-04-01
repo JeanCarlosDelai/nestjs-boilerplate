@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { MessageInputDto } from '@src/module/app/http/dto/show-message/message-input.dto';
 import { MessageOutputDto } from '@src/module/app/http/dto/show-message/message-output.dto';
-import { AppLogger } from '@src/shared/infra/logger/app-logger.service';
+import { AppLogger } from '@src/shared/module/logger/app-logger.service';
 
 @Injectable()
 export class ShowMessageUseCase {

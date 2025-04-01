@@ -5,7 +5,7 @@ import {
   FindOptionsWhere,
   Repository
 } from 'typeorm';
-import { DefaultEntity } from '@src/shared/modules/persistance/typeorm/entity/default.entity';
+import { DefaultEntity } from '@src/shared/module/persistance/typeorm/entity/default.entity';
 
 export abstract class DefaultTypeOrmRepository<T extends DefaultEntity<T>> {
   protected repository: Repository<T>;
