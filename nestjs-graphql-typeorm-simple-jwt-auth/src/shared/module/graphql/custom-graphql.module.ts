@@ -7,7 +7,7 @@ import { join } from 'path';
 export class CustomGraphQLModule {
   static register(): DynamicModule {
     const graphQLModule: DynamicModule = GraphQLModule.forRoot({
-      autoSchemaFile: join(process.cwd(), 'src/shared/infra/graphql/schema.gql'),
+      autoSchemaFile: join(process.cwd(), 'src/shared/module/graphql/schema.gql'),
       installSubscriptionHandlers: true,
       context: ({ req }) => {
         return { req };
