@@ -31,7 +31,7 @@ export abstract class DefaultTypeOrmRepository<T extends DefaultEntity<T>> {
     });
   }
 
-  async find(options: FindOneOptions<T>): Promise<T | null> {
+  async findOneBy(options: FindOneOptions<T>): Promise<T | null> {
     return this.repository.findOne(options);
   }
 
