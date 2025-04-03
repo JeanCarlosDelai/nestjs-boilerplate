@@ -24,13 +24,6 @@ export abstract class DefaultTypeOrmRepository<T extends DefaultEntity<T>> {
     return await this.repository.save(entity);
   }
 
-  async findOneById(id: string, relations?: string[]): Promise<T | null> {
-    return this.repository.findOne({
-      where: { id } as FindOptionsWhere<T>,
-      relations
-    });
-  }
-
   async findOneBy(options: FindOneOptions<T>): Promise<T | null> {
     return this.repository.findOne(options);
   }

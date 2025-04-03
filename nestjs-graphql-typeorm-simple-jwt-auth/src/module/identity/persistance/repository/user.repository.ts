@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { EntityManager } from 'typeorm';
 import { DefaultTypeOrmRepository } from '@src/shared/module/persistance/typeorm/repository/default-typeorm.repository';
-import { User } from '../entity/user.entity';
+import { User } from '@src/module/identity/persistance/entity/user.entity';
 
 @Injectable()
 export class UserRepository extends DefaultTypeOrmRepository<User> {
