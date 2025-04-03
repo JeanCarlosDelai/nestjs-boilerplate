@@ -1,10 +1,14 @@
-export abstract class DefaultError extends Error {
-  public statusCode: number;
-  public error: string;
+import { HttpException } from '@nestjs/common';
 
-  constructor(message: string, statusCode: number, error: string) {
-    super(message);
-    this.statusCode = statusCode;
-    this.error = error;
+export abstract class DefaultError extends HttpException {
+  constructor(message: string, statusCode: number, code: string) {
+    super(
+      {
+        code,
+        message,
+        statusCode
+      },
+      statusCode
+    );
   }
 }
