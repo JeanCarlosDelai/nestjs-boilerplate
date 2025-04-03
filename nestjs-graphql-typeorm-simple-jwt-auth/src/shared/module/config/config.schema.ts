@@ -11,12 +11,18 @@ const databaseSchema = z.object({
 });
 
 const passwordHashSalt = z.object({
-  password_hash_salt: z.coerce.number()
+  passwordHashSalt: z.coerce.number()
+});
+
+const jwtSchema = z.object({
+  secret: z.string(),
+  expiresIn: z.string()
 });
 
 export const configSchema = z.object({
   env: environmentSchema,
   port: z.coerce.number().positive().int(),
   database: databaseSchema,
-  salt: passwordHashSalt
+  salt: passwordHashSalt,
+  jwt: jwtSchema
 });

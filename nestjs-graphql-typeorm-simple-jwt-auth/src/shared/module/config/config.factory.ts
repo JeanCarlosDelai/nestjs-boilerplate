@@ -14,7 +14,11 @@ export const factory = (): Config => {
       username: process.env.DATABASE_USERNAME
     },
     salt: {
-      password_hash_salt: process.env.PASSWORD_HASH_SALT
+      passwordHashSalt: process.env.PASSWORD_HASH_SALT
+    },
+    jwt: {
+      secret: process.env.JWT_SECRET,
+      expiresIn: process.env.JWT_EXPIRES_IN
     }
   });
 
