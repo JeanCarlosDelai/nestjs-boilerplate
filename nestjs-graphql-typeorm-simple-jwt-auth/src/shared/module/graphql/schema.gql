@@ -2,10 +2,22 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+type UserOutputDto {
+  id: String!
+  email: String!
+  firstName: String!
+  lastName: String!
+}
+
 type MessageOutputDto {
   message: String!
 }
 
 type Query {
+  getUserById(id: String!): UserOutputDto!
   showMessage(message: String!): MessageOutputDto!
+}
+
+type Mutation {
+  createUser(email: String!, password: String!, firstName: String!, lastName: String!): UserOutputDto!
 }
