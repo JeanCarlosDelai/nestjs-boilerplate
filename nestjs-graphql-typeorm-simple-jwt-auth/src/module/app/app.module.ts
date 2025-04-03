@@ -7,4 +7,4 @@ import { LoggerModule } from '@src/shared/module/logger/logger.module';
   imports: [LoggerModule],
   providers: [ShowMessageUseCase, ShowMessageResolver]
 })
-export class CoreModule {}
+export class AppModule {}
