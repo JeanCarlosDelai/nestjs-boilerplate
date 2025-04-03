@@ -12,6 +12,9 @@ export const factory = (): Config => {
       password: process.env.DATABASE_PASSWORD,
       port: process.env.DATABASE_PORT,
       username: process.env.DATABASE_USERNAME
+    },
+    salt: {
+      password_hash_salt: process.env.PASSWORD_HASH_SALT
     }
   });
 

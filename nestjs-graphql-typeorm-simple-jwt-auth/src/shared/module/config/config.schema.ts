@@ -10,8 +10,13 @@ const databaseSchema = z.object({
   username: z.string()
 });
 
+const passwordHashSalt = z.object({
+  password_hash_salt: z.coerce.number()
+});
+
 export const configSchema = z.object({
   env: environmentSchema,
   port: z.coerce.number().positive().int(),
-  database: databaseSchema
+  database: databaseSchema,
+  salt: passwordHashSalt
 });
