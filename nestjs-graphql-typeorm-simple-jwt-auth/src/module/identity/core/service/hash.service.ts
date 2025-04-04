@@ -7,7 +7,7 @@ export class HashService {
   constructor(private readonly configService: ConfigService) {}
 
   async hash(password: string): Promise<string> {
-    return await hash(password, this.configService.get('salt.password_hash_salt'));
+    return await hash(password, this.configService.get('salt.passwordHashSalt'));
   }
 
   async compare(password: string, actualPassword: string): Promise<boolean> {

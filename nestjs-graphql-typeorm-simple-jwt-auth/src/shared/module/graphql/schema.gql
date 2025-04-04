@@ -9,15 +9,32 @@ type UserOutputDto {
   lastName: String!
 }
 
+type SignInOutputDto {
+  accessToken: String!
+}
+
 type MessageOutputDto {
   message: String!
 }
 
 type Query {
-  getUserById(id: String!): UserOutputDto!
+  getProfile: UserOutputDto!
   showMessage(message: String!): MessageOutputDto!
 }
 
 type Mutation {
-  createUser(email: String!, password: String!, firstName: String!, lastName: String!): UserOutputDto!
+  signIn(user: SignInInputDto!): SignInOutputDto!
+  createUser(user: CreateUserInputDto!): UserOutputDto!
+}
+
+input SignInInputDto {
+  email: String!
+  password: String!
+}
+
+input CreateUserInputDto {
+  email: String!
+  password: String!
+  firstName: String!
+  lastName: String!
 }

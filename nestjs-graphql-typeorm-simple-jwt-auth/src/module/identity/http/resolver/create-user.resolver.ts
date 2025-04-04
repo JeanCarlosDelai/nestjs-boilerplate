@@ -8,7 +8,7 @@ export class CreateUserResolver {
   constructor(private readonly createUserUseCase: CreateUserUseCase) {}
 
   @Mutation(() => UserOutputDto)
-  createUser(@Args() payload: CreateUserInputDto): Promise<UserOutputDto> {
+  createUser(@Args('user') payload: CreateUserInputDto): Promise<UserOutputDto> {
     return this.createUserUseCase.execute(payload);
   }
 }

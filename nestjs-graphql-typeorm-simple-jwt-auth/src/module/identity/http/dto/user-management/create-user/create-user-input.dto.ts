@@ -1,7 +1,7 @@
 import { IsNotEmpty, IsString } from 'class-validator';
-import { ArgsType, Field } from '@nestjs/graphql';
+import { Field, InputType } from '@nestjs/graphql';
 
-@ArgsType()
+@InputType()
 export class CreateUserInputDto {
   @IsString()
   @IsNotEmpty()
